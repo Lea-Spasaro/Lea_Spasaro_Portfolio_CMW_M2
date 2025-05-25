@@ -1,0 +1,192 @@
+body {
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+#accueil_titre {
+  height: 3.2em; 
+  width: 100%;
+  border-bottom: 1px solid black;
+  position: relative;
+}
+
+#accueil_h3 {
+  position: relative;
+  text-align: center;
+  margin-top: 0.8em; 
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+#accueil_h3 h3 {
+  font-size: 2.25em;
+  margin: 0;
+}
+
+#boite_logo {
+  position: absolute;
+  height: 78%; 
+  width: 83px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+#logo {
+  height: auto;
+  width: 2.5vw;              
+  max-width: 50px;         
+  min-width: 30px;        
+}
+
+#bloc-gauche {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 85px;
+  height: 100%;
+  border-right: 1px solid black;
+}
+
+#bloc_graphique01 {
+  margin: 1em auto 0 7em;
+  height: 12em;
+  width: 90%;
+  max-width: 95em;
+  border-radius: 25px;
+  border: 0.75px solid black;
+  background-color: #F2CEAE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ligne-bloc {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 2em;
+  margin: 1.5em 7em;
+}
+
+#bloc_graphique, #bloc_texte {
+  flex: 1 1 45em;
+  max-width: 50%;
+}
+
+#bloc_graphique {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+}
+
+#ligne-bloc02 {
+  display: flex;
+  gap: 1em;
+  flex-wrap: nowrap; 
+}
+
+#bloc_graphique02, #bloc_graphique03 {
+  height: 27em;
+  width: 100%;
+}
+
+.logo_FM02 {
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#logo_FM{
+  height: auto;
+  width: 11vw;
+  min-width: 90px;
+  max-width: 100%;
+}
+
+#bloc_texte {
+  padding: 1em;
+}
+
+#texte_explicatif, #data_projet {
+  text-align: justify;
+  font-size: 1.1em;
+  font-family: "Ancizar Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+#btn_prototype {
+  margin-top: 2em;
+  text-align: right;
+}
+
+.btn-custom {
+  border: none;
+  padding: 0.75em 1.5em;
+  font-size: 1em;
+  border-radius: 25px;
+  border: 2px solid #D9B07E;  
+  cursor: pointer;
+  background-color: white;
+  transition: background-color 0.4s ease;
+}
+
+.btn-custom:hover {
+  background-color: #616161;
+  color: whitesmoke ;
+}
+
+@media screen and (max-width: 991px) {
+  .ligne-bloc {
+    flex-direction: column;
+    margin: 2em 1em;
+  }
+
+   #bloc-gauche {
+    display: none;
+  }
+
+  #ligne-bloc02 {
+    flex-direction: column;
+  }
+
+  #bloc_graphique02,
+  #bloc_graphique03,
+  #bloc_graphique04 {
+    width: 100% !important;
+  }
+
+  #bloc_graphique,
+  #bloc_texte {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  #bloc_graphique01 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #btn_prototype {
+    text-align: center;
+    margin-top: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  #accueil_h3 h3 {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  #accueil_h3 h3 {
+    font-size: 1.2em;
+  }
+}

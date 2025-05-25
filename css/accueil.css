@@ -1,0 +1,88 @@
+body {
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+#accueil_titre {
+  height: 3.2em; 
+  width: 100%;
+  border-bottom: 1px solid black;
+  position: relative;
+}
+
+#accueil_h3 {
+  position: relative;
+  text-align: center;
+  margin-top: 0.8em; 
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+#accueil_h3 h3 {
+  font-size: 2.25em;
+  margin: 0;
+}
+
+#boite_logo {
+  position: absolute;
+  height: 78%; 
+  width: 83px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+#logo {
+  height: auto;
+  width: 2.5vw;              
+  max-width: 50px;         
+  min-width: 30px;        
+}
+
+.mon_carousel .carousel-item img {
+  height: 570px;
+  object-fit: cover;
+  border-bottom: 1px solid black;
+}
+
+#phrase_prez{
+	line-height: 1.4em;
+ 	font-family: "Ancizar Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+	margin-top: 2.5em;
+	font-size: 20px;
+	text-align: center;
+}
+
+#cest_moi{
+	text-align: center;
+}
+
+#icone{
+	margin-top: -13%;
+	margin-left: 85%;
+}
+
+@media (max-width: 768px) {
+  #accueil_h3 h3 {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  #accueil_h3 h3 {
+    font-size: 1.2em;
+  }
+
+  #icone {
+    position: static;
+    width: 2em;
+    height: auto;
+    margin: 1em auto 0 auto;
+    display: block;
+  }
+}

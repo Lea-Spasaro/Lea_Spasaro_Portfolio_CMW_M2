@@ -1,0 +1,188 @@
+body{
+	background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+#accueil_titre {
+  height: 3.2em; 
+  width: 100%;
+  border-bottom: 1px solid black;
+  position: relative;
+}
+
+#accueil_h3 {
+  position: relative;
+  text-align: center;
+  margin-top: 0.8em; 
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+#accueil_h3 h3 {
+  font-size: 2.25em;
+  margin: 0;
+}
+
+#boite_logo {
+  position: absolute;
+  height: 78%; 
+  width: 83px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+#logo {
+  height: auto;
+  width: 2.5vw;              
+  max-width: 50px;         
+  min-width: 30px;        
+}
+
+#bloc-gauche {
+  position: fixed;        
+  top: 0;
+  left: 0;
+  width: 85px;            
+  height: 100%;        
+  background-color: transparent;
+  z-index: 1;    
+  border-right: 1px solid black;        
+}
+
+.card {
+  width: 20%;                 
+  height: auto; 
+  margin-left: 7em;
+  margin-top: 1.5em;
+  overflow: hidden;
+  position: relative;
+  border: 0.5px solid black;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.11);
+}
+
+.card-title{
+  font-size: 2em;
+
+}
+
+.card-body{
+  height: 14em;
+  font-size: 0.95em;
+  font-family: "Ancizar Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cards-row {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5em;
+  padding: 2em;
+  gap: 2.5em;
+}
+
+.cards-row .card {
+  width: calc((85% - 3 * -2.5em) / 4); 
+  margin: 0; 
+  flex-shrink: 0;
+}
+
+.card-img-top {
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  border-bottom: 1px solid black;
+  background-color: #fffcf9;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.02);  
+  opacity: 0.8;          
+}
+
+.eye_icone {
+  position: absolute;
+  top: 70%;
+  right: 10px;
+  width: 2.5em !important;
+  height: auto;
+  display: block;
+}
+
+
+#bloc-droite{
+	margin-left: 50px;
+	margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  /* Cache le bloc gauche */
+  #bloc-gauche {
+    display: none;
+  }
+
+  #accueil_h3 h3 {
+    font-size: 1.5em;
+  }
+
+  .cards-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    margin-left: 0;
+    padding: 1em;
+  }
+
+  /* Cartes responsives */
+  .card {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: auto;
+    max-height: 40vh;
+    object-fit: cover;
+  }
+
+  .card-body {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+  }
+
+  .card-title {
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  .card-text {
+    display: none; /* Disparaît sur mobile */
+  }
+
+  .eye_icone {
+    position: static;
+    width: 2em;
+    height: auto;
+    margin: 1em auto 0 auto;
+    display: block;
+  }
+}
